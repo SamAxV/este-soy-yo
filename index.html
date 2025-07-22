@@ -1,98 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio de Samuel Duque Valencia</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      text-align: center;
-      margin: 1rem;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #2c3e50;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      background: white;
-      margin-top: 1rem;
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #2c3e50;
-      color: white;
-      margin-top: 2rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio - Samuel Duque Valencia</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
   <header>
-    <h1>Samuel Duque Valencia</h1>
-    <p>Estudiante | Apasionado por la tecnología | Futuro profesional en negocios internacionales</p>
+    <div class="container">
+      <img src="https://cdn.artphotolimited.com/images/59b65ee9faa2f46b71080369/300x300/couple-panthere.jpg" alt="Panter" class="avatar" />
+      <h1>Samuel Duque Valencia</h1>
+      <p>Técnico en Análisis de Datos</p>
+    </div>
   </header>
 
   <nav>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#lo-que-hago">Lo que hago</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
+    <ul>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
   </nav>
 
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>Soy un estudiante comprometido y curioso, que siempre busca aprender más sobre el mundo y las herramientas digitales. Me preparo con disciplina para mis metas y estoy construyendo mi futuro con esfuerzo y dedicación.</p>
-  </section>
+  <main>
+    <section id="about" class="section">
+      <h2>Sobre mí</h2>
+      <p>Soy un estudiante técnico con pasión por las nuevas tecnologias. Me interesan los negocios, marketing , la programación y crear interfaces útiles que comuniquen información de forma clara y consisa.</p>
+    </section>
 
-  <section id="lo-que-hago">
-    <h2>Lo que hago</h2>
-    <h3>📚 En el colegio</h3>
-    <p>Estudio en el INEM José Félix de Restrepo, donde me esfuerzo cada día por mejorar en materias como filosofía, matemáticas, inglés y ética. Participo en talleres, debates y exposiciones, y me preparo con seriedad para el ICFES.</p>
+    <section id="skills" class="section">
+      <h2>Habilidades</h2>
+      <div class="tags">
+        <span>Java</span>
+        <span>C++</span>
+        <span>Analitica de datos</span>
+        <span>Especialista en negocios</span>
+        <span>html</span>
+      </div>
+    </section>
 
-    <h3>🏡 En mi vida diaria</h3>
-    <p>Me gusta organizar mis tareas, aprender en línea, compartir tiempo con mi familia y seguir mis rutinas. También dedico tiempo a explorar nuevas tecnologías y mejorar mis habilidades personales.</p>
+    <section id="projects" class="section">
+      <h2>Proyectos</h2>
+      <div class="project-grid">
+        <a href="https://github.com/Sam0713xd/Pruevax" target="_blank" class="project-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEGHIJrQAFVi2i23due1lelEjomNKEtAu5mQ&s" alt="Proyecto 1" />
+          <h3>DarkAiSchool</h3>
+          <p>Pagina en la cual se podran crear,compartir y administrar repositorios de alcance escolar</p>
+        </a>
 
-    <h3>🚀 Proyectos a futuro</h3>
-    <p>Quiero ingresar a la Universidad de Medellín a estudiar Negocios Internacionales. Sueño con viajar, trabajar en el exterior y tener una doble titulación. Además, me gustaría desarrollar una app útil o tener un emprendimiento propio.</p>
-  </section>
 
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-    <ul>
-      <li><strong>Mi primer sitio web:</strong> Página básica usando HTML y CSS.</li>
-      <li><strong>App del clima:</strong> Aplicación que muestra el clima usando una API externa.</li>
-      <li><strong>Portafolio personal:</strong> Este portafolio que estás viendo ahora.</li>
-    </ul>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Email: samuel@email.com</p>
-    <p>GitHub: <a href="https://github.com/tuusuario" target="_blank">tuusuario</a></p>
-  </section>
+    <section id="contact" class="section">
+      <h2>Contacto</h2>
+      <p>Email: samuelduq78@gmail.com</p>
+      <p>Teléfono: +57 321 712 0842</p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Samuel Duque Valencia. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Samuel Duque Valencia</p>
   </footer>
-
 </body>
 </html>
